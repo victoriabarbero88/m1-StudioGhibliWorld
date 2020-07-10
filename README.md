@@ -1,7 +1,7 @@
 # m1-StudioGhibliWorld
 <img src="C:\Users\victo\Desktop\Ironhack\Practice\Project 1\html practice\images\pampling_creatures-spirits-and-friends-pampling_1560223917.large.png" style="zoom:90%;" />
 
-# **Studio Ghibli World**
+# Studio Ghibli World
 
 ## Description
 
@@ -9,7 +9,7 @@ The principal idea is to have in just one web all the information about the GHIB
 
 ## MVP
 
- **MVP - Minimum Viable Product:**
+ MVP - Minimum Viable Product:
 
 **	Home -** Is the first part that the users will see, and because of that, we use this part to introduce STUDIO GHIBLI WORLD to them with a brief description and some famous facts.
 
@@ -50,8 +50,8 @@ List of pages, and/or link to your sketchs
     - user.js		
     - validator.js		
     - api.js	
-- assets/		
-  - images/ 
+  - assets/		
+    - images/ 
 
 ## **APIs**
 
