@@ -1,5 +1,5 @@
 
-<img src=".\images\pampling_creatures-spirits-and-friends-pampling_1560223917.large.png" style="zoom:90%;" />
+<img src="./assets/imageReadme.png" style="zoom:90%;" />
 
 # Studio Ghibli World
 
