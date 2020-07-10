@@ -31,7 +31,9 @@ The principal idea is to have in just one web all the information about the GHIB
 
 ## **Wireframes**
 
-List of pages, and/or link to your sketchs
+An example of my Wireframes:
+
+<img src="./assets/home.png" style="zoom:90%;" />
 
 ## **Data structure**
 
