@@ -57,7 +57,7 @@ An example of my Wireframes:
 
 ## **APIs**
 
-The API(s) you are using
+The API Url: https://ghibliapi.herokuapp.com
 
 ## Links
 
