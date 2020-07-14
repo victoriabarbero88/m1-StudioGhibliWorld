@@ -10,15 +10,15 @@ The principal idea is to have in just one web all the information about the GHIB
 
 **MVP - Minimum Viable Product:**
 
-    Home - Is the first part that the users will see, and because of that, we use this part to introduce STUDIO GHIBLI WORLD to them with a brief description and some famous facts.
+Home - Is the first part that the users will see, and because of that, we use this part to introduce STUDIO GHIBLI WORLD to them with a brief description and some famous facts.
 
-    Movies - As the principal motive of the web, we must show to the user the work of STUDIO GHIBLI, their MOVIES for what they are globally recognized.
+Movies - As the principal motive of the web, we must show to the user the work of STUDIO GHIBLI, their MOVIES for what they are globally recognized.
 
-    Gallery - After that they got in the STUDIO GHIBLI movies, here we show to the users a little collection captures and art of their movies.
+Gallery - After that they got in the STUDIO GHIBLI movies, here we show to the users a little collection captures and art of their movies.
 
-    Test yourself! - This is the funniest part of the web, prove what do you know about STUDIO GHIBLI!
+Test yourself! - This is the funniest part of the web, prove what do you know about STUDIO GHIBLI!
 
-    Login / Registration - A sign in for existing users and registration form for new ones.
+Login / Registration - A sign in for existing users and registration form for new ones.
 
 ## **Backlog**
 
