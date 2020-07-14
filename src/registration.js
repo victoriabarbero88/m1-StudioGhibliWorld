@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 class Registration {
     constructor () {
@@ -7,7 +7,7 @@ class Registration {
         this.passwordInput = document.querySelector("#password");
         this.repeatPasswordInput = document.querySelector("#repeatPassword");
 
-        this.buttonInput = document.querySelector("#signup-button")
+        this.buttonInput = document.querySelector("#signup-button");
         this.errorsWrapper = document.querySelector(".message-container"); 
     }
 
@@ -41,38 +41,41 @@ class Registration {
 
     //gestionar el envio de los datos (submit)
     saveData = (event) => {
+        //cuando el evento ocurre cancelalo y no recargues la pag.
+        event.preventDefault();
         //recuperar los valores de cada input
         const name = this.nameInput.value;
         const email = this.emailInput.value;
         const password = this.passwordInput.value;
         const repeatPassword = this.repeatPasswordInput.value;
+ 
+        const newUser = new User(name, email, password);
+        console.log('new user');
+ 
+        //Queremos guardar el nuevo usuario en la base de datos simulada
+        db.saveNewUser( newUser);
 
 
-        function createUser(name, email, password, repeatPassword) {
-            const <i class="fa fa-usero" aria-hidden="true"></i>bj = {
-                name: name,
-                email: email,
-                password: password,
-                repeatPassword: repeatPassword
-
-            }
-        }
+        //vacias el formulario
+        this.nameInput.value = "";
+        this.emailInput.value = "";
+        this.passwordInput.value = "";
+        this.repeatPasswordInput.value = "";
     }
 
     //registrar funciones para cada input/campo
-    addListeners =  () =>
- {
+    addListeners =  () =>  {
      //escucha para los cambio de texto
      this.emailInput.addEventListener("input", this.handleEmailInput);
      this.passwordInput.addEventListener("input", this.handlePasswordInput);
      this.repeatPasswordInput.addEventListener("input", this.handleRepeatPasswordInput);
 
      this.buttonInput.addEventListener("click", this.saveData);
- }
+    }
 
 }
 
 // crear una nueva instancia del Registration (objeto)
-const Registration = new Registration ();
+const registration = new Registration ();
 
 window.addEventListener("load", registration.addListeners) ;
