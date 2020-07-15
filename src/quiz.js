@@ -65,11 +65,11 @@ quiz.questions.forEach(i => {
         newMov.innerHTML = `
         <div>
             <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
+            <div class="numbertext"></div>
             <img src="${i.img}" style="width:100%">
             <div class="textq">
                 <select name="select" class="selectList">
-                    <option value="value0">Choose one option...</option>
+                    <option value="value0">Choose an option...</option>
                     <option value="value1">${i.options[0]}</option> 
                     <option value="value2">${i.options[1]}</option>
                     <option value="value3">${i.options[2]}</option>       
