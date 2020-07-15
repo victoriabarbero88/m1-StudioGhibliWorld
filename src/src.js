@@ -15,11 +15,14 @@ fetch("https://studio-ghibli-world-app.herokuapp.com/films")
       const newEl = document.createElement("div");
 
         newEl.innerHTML = `
-            <div class="movie-card">
-                <h3>${peli.title} (${peli.release_date})<h3>
-                <img src="${peli.image}" alt="" />
-                <p>${peli.description}</p>
+          <div class"movie-card">        
+            <h3>${peli.title} (${peli.release_date})<h3>
+            <div class="container">
+              <img src="${peli.image}" alt="Avatar" class="image">
+              <div class="overlay">
+              <div class="text">${peli.description}</div>
             </div>
+          </div>
          `;
 
       list.appendChild(newEl);
