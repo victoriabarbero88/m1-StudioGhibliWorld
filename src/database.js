@@ -23,7 +23,8 @@ class Database {
 
         //sctualizar el array de usuarios
         usersArr.push(newUser);
-        console.log('ingresa usersarray');
+
+        
         //convertir el array a un string
         const usersStr = JSON.stringify(usersArr);
 

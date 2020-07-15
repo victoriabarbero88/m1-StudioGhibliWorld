@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="./css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./assets/Logo1.png" />
         <title>Studio Gibli World</title>
     </head>
     <body>
@@ -12,24 +13,20 @@
                 <a href="./index.html" ><img src="./assets/Logo1.png" alt="logo totoro"></a>
             </div>
         </nav>
-        <section>
+        <section class="allSignup">
             <h2>Sign up</h2>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Name"><br> 
+                <input type="text" id="email" name="email" placeholder="Email"><br> 
+                <input type="password" id="password" name="password" placeholder= "******"><br> 
+                <input type="password" id="repeatPassword" name="repeatPassword" placeholder= "******"><br> 
+
+                <button disabled type="submit" class="button" id="signup-button">Sign up</button>
+            </form>
+
+            <div class="message-container">
+            </div>
         </section>
-        <form>
-            
-            <input type="text" id="name" name="name" placeholder="Name"><br> 
-            <input type="text" id="email" name="email" placeholder="Email"><br> 
-            <input type="text" id="password" name="password" placeholder="Password"><br> 
-            <input type="text" id="repeatPassword" name="repeatPassword" placeholder="Repeat Password"><br> 
-
-            <button type="submit" class="button" id="signup-button">Login</button>
-            
-            
-        </form>
-
-        <div class="message-container">
-        </div>
-
         <footer>
 
         </footer>
