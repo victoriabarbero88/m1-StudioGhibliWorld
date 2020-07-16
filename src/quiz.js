@@ -1,14 +1,14 @@
 const quiz = {
     questions: [
         {
-            img: 'https://i.pinimg.com/564x/e2/b2/f2/e2b2f2d9b30e02d6d265bdac904f3a49.jpg',
-            options : ["Nausicaä of the Valley of the Wind", "Princess Mononoke","Arrietty"],
-            correctAnswer: "Arrietty"
+            img: 'https://techkalzen.com/wp-content/uploads/2020/02/ponyo-on-the-cliff-by-the-sea-2008.jpg.webp',
+            options : ["Nausicaä of the Valley of the Wind", "Ponyo","Arrietty"],
+            correctAnswer: "Ponyo"
         },
         {
-            img: 'https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2019/12/spirited_away_still.jpg',
-            options : ["Castle in the sky", "Spirited Away","Only Yesterday"],
-            correctAnswer: "Spirited Away"
+            img: 'https://filmschoolrejects.com/wp-content/uploads/2019/06/howl-stars.jpg',
+            options : ["Castle in the sky", "Howl's Moving Castle","Only Yesterday"],
+            correctAnswer: "Howl's Moving Castle"
         },
         {
             img: 'https://filmschoolrejects.com/wp-content/uploads/2019/06/grave-2.jpg',
@@ -26,66 +26,119 @@ const quiz = {
             correctAnswer: "Princess Mononoke"
         },
         {
-            img: '',
-            options : ["", "",""],
-            correctAnswer: ""
+            img: 'https://filmschoolrejects.com/wp-content/uploads/2019/06/my-neighbor-2.jpg',
+            options : ["Whisper of the Heart", "Porco Rosso","My Neighbor Totoro"],
+            correctAnswer: "My Neighbor Totoro"
         },
         {
-            img: '',
-            options : ["", "",""],
-            correctAnswer: ""
+            img: 'https://filmschoolrejects.com/wp-content/uploads/2019/06/only-yesterday-1.jpg',
+            options : ["Only Yesterday", "Pom Poko","The Wind Rises"],
+            correctAnswer: "Only Yesterday"
         },
         {
-            img: '',
-            options : ["", "",""],
-            correctAnswer: ""
+            img: 'https://borrowingtape.com/wp-content/uploads/2017/01/Nausica%C3%A4-of-the-Valley-of-the-Wind-1984.jpg',
+            options : ["Spirited Away", "Princess Mononoke","Nausicaä of the Valley of the Wind"],
+            correctAnswer: "Nausicaä of the Valley of the Wind"
         },
         {
-            img: '',
-            options : ["", "",""],
-            correctAnswer: ""
+            img: 'https://filmschoolrejects.com/wp-content/uploads/2019/06/kiki-4.jpg',
+            options : ["Kiki's Delivery Service", "When Marnie Was","The Wind Rises"],
+            correctAnswer: "Kiki's Delivery Service"
         },
         {
-            img: '',
-            options : ["", "",""],
-            correctAnswer: ""
+            img: 'https://cdn.myanimelist.net/s/common/uploaded_files/1444132246-19b3b93917f37308740748ab8b241b96.jpeg',
+            options : ["Tales from Earthsea", "Spirited Away","From Up on Poppy Hill"],
+            correctAnswer: "Spirited Away"
+        },
+        {
+           
         },
        
-        
-
     ]
 }
 
 const quizList = document.getElementById("quizList");
 
+let counter = 0;
 
-quiz.questions.forEach(i => {
+function handleAnswerEvent (event) {
+   const answerValue = event.currentTarget.value;
+   const questionIndex = event.currentTarget.dataset.index;
+   const question = quiz.questions[questionIndex];
+
+    if (answerValue === question.correctAnswer){
+        counter += 1;
+        const correctDiv = document.getElementById("question-result");
+        correctDiv.innerHTML= "";
+
+        console.log(counter)
+
+        correctDiv.innerHTML= `This is correct!!! Please, go to the next one!!!^^ `
+        setTimeout(()=>{
+            correctDiv.innerHTML= "";
+        }, 2000);
+
+    }else {
+        const errDiv = document.getElementById("question-result");
+        errDiv.innerHTML= "";
+
+        errDiv.innerHTML= `The answer is not correct! Try again!^^ `
+        quizList.appendChild(errDiv);
+        setTimeout(()=>{
+            errDiv.innerHTML= "";
+        }, 2000);
+    }
+
+}
+
+quiz.questions.forEach((question, i) => {
     const newMov = document.createElement("div");
+    
+    if (quiz.questions.length -1 === i){
+        newMov.innerHTML = `
+        <div>
+            <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="https://i.pinimg.com/564x/35/ec/02/35ec0280016df8faa0fbd35de91ad5a2.jpg" style="width:100%">
+            <div class="textq">
+                <p>"hola" + ${counter} + "/10"</p>
+            </div>
+            </div>
+        </div>  
+            
+        `;
+
+    }else {
 
         newMov.innerHTML = `
         <div>
             <div class="mySlides fade">
             <div class="numbertext"></div>
-            <img src="${i.img}" style="width:100%">
+            <img src="${question.img}" style="width:100%">
             <div class="textq">
-                <select name="select" class="selectList">
-                    <option value="value0">Choose an option...</option>
-                    <option value="value1">${i.options[0]}</option> 
-                    <option value="value2">${i.options[1]}</option>
-                    <option value="value3">${i.options[2]}</option>       
+                <select name="select" class="selectList" data-index="${i}">
+                    <option value="">Choose an option...</option>
+                    <option value="${question.options[0]}">${question.options[0]}</option> 
+                    <option value="${question.options[1]}">${question.options[1]}</option>
+                    <option value="${question.options[2]}">${question.options[2]}</option>       
                 </select>
             </div>
             </div>
         </div>  
             
         `;
+
+        const selectQuiz = newMov.querySelector("select") 
+    
+          
+        selectQuiz.addEventListener("input", handleAnswerEvent);
+    }
+
     quizList.appendChild(newMov);
+
+   
+
 });
-
-//addEventListener
-
-
-//crear array answers con datos de las respuestas del usuario
 
 
 //igualar la respuesta correcta con cada answer del usuario 
