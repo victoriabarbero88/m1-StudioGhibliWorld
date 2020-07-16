@@ -66,12 +66,12 @@ body {
 
  /*NAVBAR*/
  .login img {
-  height: 30px; 
-  margin-top: 10px;
+  height: 22px; 
+  margin-top: 15px;
   
 }
 .totoro img {
-  height: 40px;
+  height: 35px;
   margin-top: 6px; 
   margin-bottom: 6px; 
     
@@ -83,14 +83,15 @@ nav {
   justify-content: space-around;
   background-color: rgba(255,255,255,0.5);
   margin-bottom: 4px;
+
+
 }
 
 nav p, a {
   color: black;
   text-decoration: none;
   cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAwAAAAMAAAAEAAAABAAAAAQAAAAEAAAAAwAAAAIAAAACAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAMAAAAIAAAADgAAABIAAAAUAAAAFQAAABcAAAAYAAAAGAAAABYAAAAUAAAAEAAAAAsAAAAGAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABQAAAAgAAAANAAAAEwAAABcAAAAZAAAAGwAAABwAAAAcAAAAGgAAABkAAAAVAAAAEAAAAAsAAAAGAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAwAAAAcAAAAOAAAAFAAAABoAAAAeAAAAHwAAACEAAAAfAAAAHQAAABkAAAAUAAAADwAAAAoAAAAGAAAAAwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAAYAAAAMAAAAFwAAACAAAAAtAAAANgAAAD0CAgJCAAAAPwAAADsAAAA4AAAALgAAACcAAAAfAAAAFgAAAA4AAAAIAAAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAIAAAAFAAAACMAAAA3AwMDUAAAAF0BAQFrAAAAbwQEBHoAAABuAAAAZwEBAWEAAABVAAAAQwAAATYAAAAoAAAAGwAAABEAAAAJAAAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAACwAAABoAAAAxAQEBUQAAAHAICAiiAQEBoAUFBbUBAQGwBwcHxAIC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'), auto; 
-  padding-left: 8px;
-  padding-top: 15px;
+  margin-top: 15px;
  
 }
 nav p{
@@ -168,19 +169,21 @@ nav p{
   background-color: rgba(255,255,255,0.5);
   flex-wrap: wrap;
   justify-content: center;
+  height: auto;
 }
 #list img {
   border-radius: 20%;
-  width: 100%;
-  height: auto; 
-   
+  width: 75%;
+ 
+  
 }
 #list p { 
-  width: 100%;
+  width: 75%;
   justify-content: center;
   font-size: 23px;
   font-weight: lighter;
   
+  text-align: center;
 }
 
 #list h3 {
@@ -188,19 +191,20 @@ nav p{
   margin-bottom: 20px;
   text-align: center;
   font-weight: bolder;
-  padding-top: 20px;
+  margin-top: 10%;
+  
 }
 /*movies images css part */
 .containerM {
   position: relative;
   width: 100%;
-  padding: 0 10px;
-}
+  padding-left: 20%;
+  }
 
 .imageM {
   display: block;
-  width: 100%;
-  height: auto; 
+  
+  
 }
 
 .overlayM {
@@ -209,13 +213,13 @@ nav p{
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  width: 75%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(0, 0, 0, 0.719);
+  background-color: rgba(0, 0, 0, 0.87);
   border-radius: 20%;
-  
+  margin-left: 12%;
+  margin-right: 12%;
   
 }
 
@@ -227,13 +231,14 @@ nav p{
   position: relative;
   width: 100%;
   color: white;
-  font-size: 23px;
+  font-size: 16px;
   position: absolute;
   padding: 20px;
   bottom: 10%;
   top: 10%;
-  text-align: left;
+  text-align: center;
   overflow: scroll;
+  
 }
 /*END MOVIES*/
 
@@ -401,6 +406,7 @@ nav p{
     font-weight: bolder;
     text-align: center;
     background-color:  rgba(36, 34, 34, 0.801);
+    margin-bottom: 50px;
   }
 
   #fotosquiz .slideshow-container {
@@ -501,14 +507,171 @@ nav p{
 
   
 
-  @media (min-width: 450px) {
-    h2{ background-color: black;}
+  @media (min-width: 425px) {
+   h1 {padding-bottom: 10px;}
+   #list h3 {font-size: 22px;}
+
+   .textM {font-size: 20px;}
+   nav p {
+     font-size: 18px;
    
+  }
+  .login img {
+    height:28px;
+    margin-top: 18px;
+  }
+  .totoro img {
+    height: 48px;
+  }
+  nav p, a{
+    margin-top: 25px;
+   }
   }
 
   @media (min-width: 768px) {
+    .login img {
+      height:38px;
+      margin-top: 26px;
+    }
+    .totoro img {
+      height: 65px;
+      margin-top: 12px;
+    }
+    #list h3 {font-size: 26px;}
+    h1 {padding-bottom: 10px; font-size: 3rem;}
+    .textM {font-size: 30px;}
+    nav p {
+      font-size: 24px;
+      margin-bottom: 6%;
+   }
+   h2 {
+     font-size: 2rem;
+   }
+   #indexCss .texth {
+     font-size: 25px;
+   }
+   nav p, a{
+    margin-top: 30px;
+   }
+  }
 
-    h2
-    { background-color: red;}
+  @media (min-width: 1024px) {
+    .login img {
+      height:50px;
+      margin-top: 45px;
+    }
+    .totoro img {
+      height: 90px;
+      margin-top: 20px;
+    }
+    #list h3 {font-size: 30px;}
+    h1 {padding-bottom: 10px; font-size: 4.5rem;}
+    .textM {font-size: 25px; margin: 0 0px;}
+    nav p {
+      font-size: 38px;
+      
+   }
+   h2 {
+     font-size: 3.5rem;
+   }
+   #indexCss .texth {
+     font-size: 29px;
+   }
+   nav p, a{
+    margin-top: 40px;
+   }
+   .overlayM {margin-right: 0px;
+      margin-left: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+    height: auto;
+    width: 100%}
+
+   .containerM {padding: 0px; width: 100%;}
+
+   .textM {font-size:30px; margin: 10px;width: 100%; text-align: left;}
+
+   .imageM img {margin: 0px; height: auto; width: 100%}
+
+   #list img {
+    width: 100%
+   }
+
+   #gallerycss .textg {
+     font-size: 25px;
+   }
+
+   #question-result {
+    font-size: 25px;
+  }
+
+  select {
+    font-size: 20px;
+  }
+  #fotosquiz .prev, .next {
+    font-size: 30px;
+  }
+  .allLogin {
+    font-size: 20px;
+  }
 
   }
+
+  @media (min-width: 1024px) {
+    .login img {
+      height:70px;
+      margin-top: 50px;
+    }
+    .totoro img {
+      height: px;
+      margin-top: 20px;
+    }
+    #list h3 {font-size: 35px;}
+    h1 {padding-bottom: 10px; 
+      font-size: 5rem;}
+    .textM {font-size: 25px; margin: 0 0px;}
+    nav p {
+      font-size: 40px;
+   }
+   h2 {
+     font-size: 4rem;
+   }
+  
+   nav p, a{
+    margin-top: 60px;
+   }
+
+   .overlayM {height: auto;}
+
+   .containerM { padding: 40px; width: 100%;}
+
+   .textM {font-size:30px; margin: 10px;width: 100%; text-align: left;}
+
+   .imageM img {margin: 0px; height: auto; width: 100%}
+
+   #list img {
+    width: 100%
+    height: auto;
+   }
+
+   #gallerycss .textg {
+     font-size: 40px;
+   }
+
+   #question-result {
+    font-size: 40px;
+  }
+
+  select {
+    font-size: 30px;
+  }
+  #fotosquiz .prev, .next {
+    font-size: 30px;
+  }
+  .allLogin {
+    font-size: 25px;
+  }
+
+  }
+
+ 

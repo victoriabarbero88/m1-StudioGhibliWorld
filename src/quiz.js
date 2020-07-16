@@ -99,9 +99,9 @@ quiz.questions.forEach((question, i) => {
         <div>
             <div class="mySlides fade">
             <div class="numbertext"></div>
-            <img src="https://i.pinimg.com/564x/35/ec/02/35ec0280016df8faa0fbd35de91ad5a2.jpg" style="width:100%">
+            <img src="https://filmschoolrejects.com/wp-content/uploads/2019/06/when-marnie-boat.jpg" style="width:100%">
             <div class="textq">
-                <p>"hola" + ${counter} + "/10"</p>
+                <p>"This is the end! How did the test go??^^"</p>
             </div>
             </div>
         </div>  
