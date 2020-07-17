@@ -241,6 +241,13 @@ nav p{
 /*END MOVIES*/
 
 /*GALLERY*/
+  #gallImg {
+  width: 100%;
+  height: calc(100vh - 280px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
   #gallerycss .slideshow-container {
     max-width: 100%;
     position: relative;
@@ -261,7 +268,7 @@ nav p{
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
@@ -282,10 +289,9 @@ nav p{
   /* Caption text */
   #gallerycss .textg {
     color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
+    font-size: 20px;
     position: absolute;
-    bottom: 8px;
+    bottom: 90%;
     width: 100%;
     text-align: center;
     background-color: rgba(241, 231, 231, 0.61);
@@ -485,9 +491,7 @@ nav p{
     margin-bottom: 20px;
   }
   
-  #fotosquiz .active, .dot:hover {
-    background-color:red;
-  }
+  
   
   /* Fading animation */
   #fotosquiz .fade {
@@ -593,7 +597,7 @@ nav p{
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-10%, -10%);
+      transform: translate(-40%, -40%);
       overflow: auto;
       text-align: center;
     }
@@ -614,28 +618,29 @@ nav p{
     /*MOVIES*/
    #list img {
     width: 100%
+    
    }
-   #list h3 {font-size: 30px;}
+
+   
+   #list h3 {font-size: 20px; }
   
    .overlayM {margin-right: 0px;
       margin-left: 0px;
       height: auto;
       width: 100%}
 
-   .containerM {padding: 0px; width: 400px;}
+   .containerM {padding: 0px; width: 400px; padding-right: 20px;}
 
    .textM {font-size:30px; margin: 10px;width: 100%; text-align: left;}
 
-   .imageM img {margin: 0px; height: auto; width: 100%}
+   .imageM img {margin: 0px;  width: 100%}
 
-   #list img {
-    width: 100%
-   }
+  
   /*END MOVIES*/
 
   /*GALLERY*/
    #gallerycss .textg {
-     font-size: 25px;
+     font-size: 40px;
    }
 
    #question-result {
@@ -654,6 +659,11 @@ nav p{
     font-size: 30px;
     
     
+   }
+
+   .textq p {
+    color: white;
+
    }
   /*END QUIZ*/
 

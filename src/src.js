@@ -16,7 +16,7 @@ fetch("https://studio-ghibli-world-app.herokuapp.com/films")
 
         newEl.innerHTML = `
           <div class"movie-card">        
-            <h3>${peli.title} (${peli.release_date})<h3>
+            <h3 id="h3movies">${peli.title} (${peli.release_date})<h3>
             <div class="containerM">
               <img src="${peli.image}" alt="Avatar" class="imageM">
               <div class="overlayM">

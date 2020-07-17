@@ -60,6 +60,8 @@ The API URl I'm using: https://ghibliapi.herokuapp.com
 
 ## Links
 
+My web is in the next link: https://victoriabarbero88.github.io/m1-StudioGhibliWorld/
+
 #### Trello
 
 (list of tasks)**[Link url](https://trello.com/)**
