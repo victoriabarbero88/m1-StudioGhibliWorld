@@ -131,6 +131,7 @@ nav p{
   background-color: rgba(36, 34, 34, 0.61);
   overflow: scroll;
   text-align: center;
+  
 }
 #indexCss .dot {
   height: 15px;
@@ -169,7 +170,7 @@ nav p{
   background-color: rgba(255,255,255,0.5);
   flex-wrap: wrap;
   justify-content: center;
-  height: auto;
+  
 }
 #list img {
   border-radius: 20%;
@@ -182,7 +183,6 @@ nav p{
   justify-content: center;
   font-size: 23px;
   font-weight: lighter;
-  
   text-align: center;
 }
 
@@ -203,8 +203,6 @@ nav p{
 
 .imageM {
   display: block;
-  
-  
 }
 
 .overlayM {
@@ -220,7 +218,6 @@ nav p{
   border-radius: 20%;
   margin-left: 12%;
   margin-right: 12%;
-  
 }
 
 .containerM:hover .overlayM {
@@ -237,7 +234,8 @@ nav p{
   bottom: 10%;
   top: 10%;
   text-align: center;
-  overflow: scroll;
+  overflow: auto;
+  
   
 }
 /*END MOVIES*/
@@ -400,14 +398,21 @@ nav p{
 
    /*QUIZ*/
   /* Slideshow container */
+#quizImg {
+  width: 100%;
+  height: calc(100vh - 280px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
   #question-result {
     font-size: 12px;
     color: white;
     font-weight: bolder;
     text-align: center;
     background-color:  rgba(36, 34, 34, 0.801);
-    margin-bottom: 50px;
-  }
+   }
 
   #fotosquiz .slideshow-container {
     max-width: 100%;
@@ -473,7 +478,7 @@ nav p{
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color:;
+    
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -481,7 +486,7 @@ nav p{
   }
   
   #fotosquiz .active, .dot:hover {
-    background-color:;
+    background-color:red;
   }
   
   /* Fading animation */
@@ -501,8 +506,7 @@ nav p{
     from {opacity: .4}
     to {opacity: 1}
   }
-  
-  /*END QUIZ*/
+   /*END QUIZ*/
   
 
   
@@ -512,10 +516,7 @@ nav p{
    #list h3 {font-size: 22px;}
 
    .textM {font-size: 20px;}
-   nav p {
-     font-size: 18px;
    
-  }
   .login img {
     height:28px;
     margin-top: 18px;
@@ -526,9 +527,14 @@ nav p{
   nav p, a{
     margin-top: 25px;
    }
+   nav p {
+    font-size: 18px;
+  
+ }
   }
 
   @media (min-width: 768px) {
+    /*NAVBAR*/
     .login img {
       height:38px;
       margin-top: 26px;
@@ -537,57 +543,86 @@ nav p{
       height: 65px;
       margin-top: 12px;
     }
-    #list h3 {font-size: 26px;}
-    h1 {padding-bottom: 10px; font-size: 3rem;}
-    .textM {font-size: 30px;}
     nav p {
       font-size: 24px;
-      margin-bottom: 6%;
-   }
-   h2 {
-     font-size: 2rem;
-   }
-   #indexCss .texth {
-     font-size: 25px;
-   }
-   nav p, a{
+    }
+    nav a{
     margin-top: 30px;
-   }
+    }
+    /*END NAVBAR*/
+
+    /*INDEX*/
+    #indexCss .texth {
+      font-size: 25px;
+    }
+
+    /*GENERAL*/
+    h1 {padding-bottom: 10px; font-size: 3rem;}
+    h2 {font-size: 2rem;}
+
+    /*MOVIES*/
+    #list h3 {font-size: 26px;}
+    .textM {font-size: 30px;}
   }
 
   @media (min-width: 1024px) {
+
+    /*NAVBAR*/
     .login img {
       height:50px;
-      margin-top: 45px;
+      margin-top: 10px;
     }
     .totoro img {
-      height: 90px;
-      margin-top: 20px;
+      height: 60px;
+     
     }
-    #list h3 {font-size: 30px;}
-    h1 {padding-bottom: 10px; font-size: 4.5rem;}
-    .textM {font-size: 25px; margin: 0 0px;}
-    nav p {
-      font-size: 38px;
+    nav {
+     
+      margin-top: 10px;
+    }
+    nav a, p {
+     
       
+    }
+   
+    /*END NAVBAR*/
+
+    /*INDEX/HOME*/
+    #indexCss .texth {
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-10%, -10%);
+      overflow: auto;
+      text-align: center;
+    }
+    #indexCss .contenedor{
+      position: relative;
+      display: inline-block;
+      text-align: center;
+  }
+    /*END INDEX*/
+
+    /*GENERAL*/
+    h1 {padding-bottom: 10px; font-size: 5rem;}
+    
+    h2 { font-size: 3.5rem;}
+    /*END GENERAL*/
+
+
+    /*MOVIES*/
+   #list img {
+    width: 100%
    }
-   h2 {
-     font-size: 3.5rem;
-   }
-   #indexCss .texth {
-     font-size: 29px;
-   }
-   nav p, a{
-    margin-top: 40px;
-   }
+   #list h3 {font-size: 30px;}
+  
    .overlayM {margin-right: 0px;
       margin-left: 0px;
-      padding-left: 10px;
-      padding-right: 10px;
-    height: auto;
-    width: 100%}
+      height: auto;
+      width: 100%}
 
-   .containerM {padding: 0px; width: 100%;}
+   .containerM {padding: 0px; width: 400px;}
 
    .textM {font-size:30px; margin: 10px;width: 100%; text-align: left;}
 
@@ -596,7 +631,9 @@ nav p{
    #list img {
     width: 100%
    }
+  /*END MOVIES*/
 
+  /*GALLERY*/
    #gallerycss .textg {
      font-size: 25px;
    }
@@ -604,74 +641,28 @@ nav p{
    #question-result {
     font-size: 25px;
   }
+  /*END GALLERY*/
 
+  /*QUIZ*/
   select {
-    font-size: 20px;
-  }
-  #fotosquiz .prev, .next {
     font-size: 30px;
   }
+  #fotosquiz .prev, .next {
+    font-size: 60px;
+  }
+  #question-result {
+    font-size: 30px;
+    
+    
+   }
+  /*END QUIZ*/
+
+  /*LOGIN+SIGNUP*/
   .allLogin {
     font-size: 20px;
   }
-
-  }
-
-  @media (min-width: 1024px) {
-    .login img {
-      height:70px;
-      margin-top: 50px;
-    }
-    .totoro img {
-      height: px;
-      margin-top: 20px;
-    }
-    #list h3 {font-size: 35px;}
-    h1 {padding-bottom: 10px; 
-      font-size: 5rem;}
-    .textM {font-size: 25px; margin: 0 0px;}
-    nav p {
-      font-size: 40px;
-   }
-   h2 {
-     font-size: 4rem;
-   }
+  /*END LOGIN+SIGNUP*/
+}
   
-   nav p, a{
-    margin-top: 60px;
-   }
-
-   .overlayM {height: auto;}
-
-   .containerM { padding: 40px; width: 100%;}
-
-   .textM {font-size:30px; margin: 10px;width: 100%; text-align: left;}
-
-   .imageM img {margin: 0px; height: auto; width: 100%}
-
-   #list img {
-    width: 100%
-    height: auto;
-   }
-
-   #gallerycss .textg {
-     font-size: 40px;
-   }
-
-   #question-result {
-    font-size: 40px;
-  }
-
-  select {
-    font-size: 30px;
-  }
-  #fotosquiz .prev, .next {
-    font-size: 30px;
-  }
-  .allLogin {
-    font-size: 25px;
-  }
-
-  }
 
  

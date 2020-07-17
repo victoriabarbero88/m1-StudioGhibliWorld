@@ -114,7 +114,7 @@ quiz.questions.forEach((question, i) => {
         <div>
             <div class="mySlides fade">
             <div class="numbertext"></div>
-            <img src="${question.img}" style="width:100%">
+            <div id="quizImg"></div> 
             <div class="textq">
                 <select name="select" class="selectList" data-index="${i}">
                     <option value="">Choose an option...</option>
@@ -129,7 +129,9 @@ quiz.questions.forEach((question, i) => {
         `;
 
         const selectQuiz = newMov.querySelector("select") 
-    
+        const quizImage = newMov.querySelector("#quizImg")
+
+        quizImage.style.backgroundImage = `url("${question.img}")`
           
         selectQuiz.addEventListener("input", handleAnswerEvent);
     }
